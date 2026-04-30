@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { AlertCircle, BookOpen, CheckCircle2, Clock, Edit2, LogOut, Plus, Trash2 } from 'lucide-react'
 
 import { mockAdminUser, mockBooks, mockReadingRecords } from '@/lib/mock-data'
@@ -65,9 +65,14 @@ export default function AdminPageClient() {
   })
 
   const router = useRouter()
-  const searchParams = useSearchParams()
   const supabase = createClient()
-  const mockMode = searchParams.get('mock') === '1'
+  const [mockMode, setMockMode] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setMockMode(new URLSearchParams(window.location.search).get('mock') === '1')
+    }
+  }, [])
 
   const categories = [
     'Fiction',

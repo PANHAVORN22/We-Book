@@ -1,0 +1,110 @@
+export const mockAdminUser = {
+  id: 'mock-admin',
+  email: 'admin@bookvault.dev',
+  role: 'admin',
+}
+
+export const mockBooks = [
+  {
+    id: 'mock-1',
+    title: 'The Clockwork Garden',
+    author: 'Elena Rowe',
+    isbn: '9780000000001',
+    description: 'A city of gears hides a secret library beneath its streets.',
+    cover_url: '/covers/clockwork-garden.svg',
+    category: 'Fantasy',
+    published_year: 2021,
+    total_copies: 6,
+    available_copies: 4,
+  },
+  {
+    id: 'mock-2',
+    title: 'Signal in the Dust',
+    author: 'Marcus Hale',
+    isbn: '9780000000002',
+    description: 'An archaeologist decodes a message buried for a thousand years.',
+    cover_url: '/covers/signal-in-the-dust.svg',
+    category: 'Mystery',
+    published_year: 2018,
+    total_copies: 3,
+    available_copies: 2,
+  },
+  {
+    id: 'mock-3',
+    title: 'Northbound Atlas',
+    author: 'Priya Sen',
+    isbn: '9780000000003',
+    description: 'A travel writer retraces a legendary route across frozen seas.',
+    cover_url: '/covers/northbound-atlas.svg',
+    category: 'History',
+    published_year: 2020,
+    total_copies: 5,
+    available_copies: 5,
+  },
+  {
+    id: 'mock-4',
+    title: 'Algorithms of the Heart',
+    author: 'Jun Park',
+    isbn: '9780000000004',
+    description: 'A researcher builds a kindness model and challenges her team.',
+    cover_url: '/covers/algorithms-of-the-heart.svg',
+    category: 'Science Fiction',
+    published_year: 2023,
+    total_copies: 4,
+    available_copies: 1,
+  },
+]
+
+export const mockReadingRecords = [
+  {
+    id: 'reading-1',
+    book_id: 'mock-1',
+    user_id: 'mock-user-1',
+    borrow_date: '2026-04-18T10:00:00.000Z',
+    due_date: '2026-05-02T10:00:00.000Z',
+    return_date: null,
+    status: 'borrowed',
+    book: {
+      title: 'The Clockwork Garden',
+      author: 'Elena Rowe',
+    },
+    user: {
+      full_name: 'Avery Knox',
+      email: 'avery@bookvault.dev',
+    },
+  },
+  {
+    id: 'reading-2',
+    book_id: 'mock-2',
+    user_id: 'mock-user-2',
+    borrow_date: '2026-03-28T15:30:00.000Z',
+    due_date: '2026-04-11T15:30:00.000Z',
+    return_date: '2026-04-08T12:00:00.000Z',
+    status: 'returned',
+    book: {
+      title: 'Signal in the Dust',
+      author: 'Marcus Hale',
+    },
+    user: {
+      full_name: 'Jordan Liu',
+      email: 'jordan@bookvault.dev',
+    },
+  },
+  {
+    id: 'reading-3',
+    book_id: 'mock-4',
+    user_id: 'mock-user-3',
+    borrow_date: '2026-03-20T08:15:00.000Z',
+    due_date: '2026-04-03T08:15:00.000Z',
+    return_date: null,
+    status: 'overdue',
+    book: {
+      title: 'Algorithms of the Heart',
+      author: 'Jun Park',
+    },
+    user: {
+      full_name: 'Samir Patel',
+      email: 'samir@bookvault.dev',
+    },
+  },
+]

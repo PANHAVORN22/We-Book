@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img"
+    aria-labelledby="title desc">
+    <title id="title">The Clockwork Garden</title>
+    <desc id="desc">Cover art for The Clockwork Garden.</desc>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0f766e" />
+            <stop offset="1" stop-color="#f59e0b" />
+        </linearGradient>
+    </defs>
+    <rect width="600" height="900" fill="url(#bg)" />
+    <rect x="40" y="48" width="520" height="804" rx="28" fill="#0b3b36" opacity="0.35" />
+    <text x="300" y="220" text-anchor="middle" font-family="serif" font-size="36" fill="#f8fafc">
+        BookVault Presents
+    </text>
+    <text x="300" y="360" text-anchor="middle" font-family="serif" font-size="64" fill="#fff7ed">
+        The Clockwork
+    </text>
+    <text x="300" y="430" text-anchor="middle" font-family="serif" font-size="64" fill="#fff7ed">
+        Garden
+    </text>
+    <line x1="160" y1="520" x2="440" y2="520" stroke="#fde68a" stroke-width="3" />
+    <text x="300" y="600" text-anchor="middle" font-family="serif" font-size="28" fill="#fef3c7">
+        Elena Rowe
+    </text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img"
+    aria-labelledby="title desc">
+    <title id="title">Book cover placeholder</title>
+    <desc id="desc">Neutral placeholder cover for books without an image.</desc>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e5e7eb" />
+            <stop offset="1" stop-color="#cbd5f5" />
+        </linearGradient>
+    </defs>
+    <rect width="600" height="900" fill="url(#bg)" />
+    <rect x="48" y="60" width="504" height="780" rx="28" fill="#f8fafc" stroke="#d1d5db"
+        stroke-width="2" />
+    <text x="300" y="380" text-anchor="middle" font-family="serif" font-size="40" fill="#475569">
+        Book cover
+    </text>
+    <text x="300" y="430" text-anchor="middle" font-family="serif" font-size="28" fill="#64748b">
+        Coming soon
+    </text>
+    <line x1="140" y1="520" x2="460" y2="520" stroke="#94a3b8" stroke-width="2" />
+    <text x="300" y="580" text-anchor="middle" font-family="serif" font-size="22" fill="#94a3b8">
+        BookVault Library
+    </text>
+</svg>
